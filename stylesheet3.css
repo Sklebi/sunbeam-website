@@ -1,0 +1,49 @@
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    padding: 0px;
+    gap: 0px;
+    flex-direction: column;
+}
+
+
+.bluckyblock{
+    height: 250px;
+    width: 350px;
+}
+.luckyblock{
+    height: 250px;
+    width: 250px;
+}
+
+.luckyblock{
+    display: block;
+}
+
+.bluckyblock{
+    display: none;
+}
+.blockcontainer:hover .luckyblock{
+    display: none;
+}
+
+.blockcontainer:hover .bluckyblock{
+    display: block;
+}
+
+.clickmebutton{
+    font-family: 'Cascadia Code';
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+    font-family: 'Cascadia Code';
+    opacity: 70%;
+}
+
+.home:hover{
+    opacity: 100%
+}

@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    padding: 0px;
+    gap: 0px;
+    flex-direction: column;
+}
+
+
+.bluckyblock{
+    height: 250px;
+    width: 350px;
+}
+.luckyblock{
+    height: 250px;
+    width: 250px;
+}
+
+.luckyblock{
+    display: block;
+}
+
+.bluckyblock{
+    display: none;
+}
+.blockcontainer:hover .luckyblock{
+    display: none;
+}
+
+.blockcontainer:hover .bluckyblock{
+    display: block;
+}
+
+.clickmebutton{
+    font-family: 'Cascadia Code';
+
+}
+
+.footer{
+    padding:30px 40px;
+    background-color:#e3b82b;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.phone-section h4{
+    white-space: nowrap;
+}
+
+.footer-links-group{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    white-space: nowrap;
+}
+.footerbtn a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Cascadia Code'
+    
+}
+
+.footerbtn a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.footerbtn:hover a::after{
+    transform: scaleX(1);
+}
+
+.text{
+    color: white;
+    font-family: 'Cascadia Code';
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text h4{
+    margin: 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+.text i{
+    margin-top: 4px;
+}
+
+.blockcontainers img{
+    height: 150px;
+    width: auto;
+    padding: 0px;
+}
+
+.luckyblocks{
+    display: block;
+}
+
+.bluckyblocks{
+    display: none;
+}
+.blockcontainers:hover .luckyblocks{
+    display: none;
+}
+
+.blockcontainers:hover .bluckyblocks{
+    display: block;
+}

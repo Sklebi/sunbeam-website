@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    overflow: hidden; 
+}
+
+.background{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0; 
+    margin: 0;     
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.block {
+    width: 320px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: -40px;
+    opacity: 60%;
+}
+
+.block:hover{
+    opacity: 100%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contentrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contentrow h1{
+    color: white;
+    font-family: 'Cascadia Code';
+
+}
+
+.column h1{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.home{
+    text-decoration: none;
+    color: white;
+    font-family: Cascadia Code;
+    border: 3px solid;
+    border-radius: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 50px;
+    background-color: #34a4eb;
+    opacity: 90%;
+}
+
+.home:hover{
+    opacity: 100%;
+}
+
+#experience, #sights, #food{
+    border: 3px solid;
+    padding: 10px 10px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #34a4eb;
+    opacity: 90%;
+}
